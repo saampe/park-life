@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><meta name="theme-color" content="#283329"><meta name="description" content="A quiet window into a shark's little life in the park."><title>Park Life</title><link rel="stylesheet" href="style.css"></head>
+<body>
+<main id="app">
+ <div class="stage" id="stage">
+  <canvas id="world" width="1487" height="1058" role="img" aria-label="An animated park with a green house, a tall shark, and a swimming mail fish."></canvas>
+  <div id="loading" class="loading" role="status">Opening his little world…</div>
+  <button id="view" class="scene-button home" aria-label="Look inside the house" title="Look inside"><img src="assets/home-button.png" alt=""></button>
+  <button id="try" class="scene-button try" aria-label="Try a day"><img src="assets/try-button.png" alt="Try a day"></button>
+  <button id="sim-return" class="sim-return" hidden>Trying a day · Return to your world</button>
+  <button id="notice" class="notice" hidden aria-live="polite"></button>
+ </div>
+ <p class="orientation">A window into his world. Try landscape for a closer look.</p>
+ <button id="life" class="life-button" aria-label="Open his little life journal">His little life</button>
+</main>
+<dialog id="controls" aria-labelledby="controls-title">
+ <header><div><p class="eyebrow">A LITTLE WHAT-IF</p><h1 id="controls-title">Try a day</h1><p class="intro">Change your day. See what he gets up to.</p></div><button class="icon-button" id="close" aria-label="Close controls">Close</button></header>
+ <div class="panel-content">
+  <div class="scene-summary"><span class="status-dot" aria-hidden="true"></span><span id="activity-label">Taking the long way around</span></div>
+  <section aria-label="Time"><div class="label-row"><label for="hour">Stockholm time</label><output id="time-label" for="hour"></output></div><input id="hour" type="range" min="0" max="23.75" step=".25" value="14"><label class="check"><input type="checkbox" id="live-time" checked> Follow my local day in Stockholm</label><p class="hint">Daylight follows Stockholm’s seasons and daylight saving time.</p></section>
+  <section aria-label="Weather and season"><div class="field-pair"><div><label for="weather">Weather</label><select id="weather"><option value="clear">Sunny</option><option value="cloudy">Cloudy</option><option value="rain">Rainy</option><option value="storm">Stormy</option></select></div><div><label for="season">Season</label><select id="season"><option value="auto">Real season</option><option value="spring">Spring</option><option value="summer">Summer</option><option value="autumn">Autumn</option><option value="winter">Winter</option></select></div></div><p class="hint">A preview of the weather. No weather service is connected.</p></section>
+  <section aria-label="Email parcels"><div class="label-row"><h2>A little mail</h2><span id="parcel-count" class="small-value">0 parcels</span></div><p>Every five new emails bring one parcel. The fish handles the rest.</p><div class="email-actions"><button id="one-email" class="small-button">+1 email</button><button id="five-emails" class="small-button primary">+5 emails</button></div><p class="hint" id="email-progress">0 of 5 toward the next parcel.</p></section>
+  <section aria-label="Calendar"><div class="label-row"><label for="busy">Calendar busyness</label><output id="busy-label" for="busy">0 hours</output></div><input type="range" id="busy" min="0" max="10" step=".5" value="0"><p id="busy-description">A quiet day. Plenty of time to wander.</p><p class="hint">Four or more busy hours gently favor projects and tinkering.</p></section>
+  <section aria-label="Time away"><h2>Life goes on</h2><p>He has his own life, even when you’re away. Sometimes something changes. Sometimes it doesn’t.</p><div class="away-row"><label class="sr-only" for="away">Time away</label><select id="away"><option value="1">An hour</option><option value="24">A day</option><option value="72">Three days</option><option value="168">A week</option></select><button id="come-back" class="small-button">Come back</button></div><p class="hint">No loneliness. No neglect. No catching up on chores.</p></section>
+  <section><h2>A moment of his own</h2><p id="current-moment">He is perfectly capable of wasting his own afternoon.</p><div class="email-actions"><button id="choose" class="small-button">Let him choose</button><button id="follow" class="small-button" aria-pressed="true">Follow him: on</button></div></section>
+  <details id="journal-details"><summary>His little life <span id="journal-count"></span></summary><div id="journal" class="journal"></div><div id="possessions" class="possessions"></div></details>
+  <details><summary>Private by nature</summary><p>Your little world saves on this device. These controls use pretend signals. No accounts are connected.</p><p>Email will use new-message counts; calendar will use busy times. Names, messages and event titles stay out of the app.</p><p>While the app is closed, his next chapter is reconstructed when you return.</p><label class="check"><input type="checkbox" id="motion"> Gentle motion only</label></details>
+ </div>
+ <footer><button id="return-world" class="small-button wide">Return to your world</button><p id="save-status">Saved on this device · No accounts connected</p></footer>
+</dialog>
+<script type="module" src="app.js"></script>
+</body></html>

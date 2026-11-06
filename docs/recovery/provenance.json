@@ -1,0 +1,228 @@
+{
+  "schema_version": 1,
+  "recovered_at_utc": "2026-11-06T17:14:11.624231+00:00",
+  "repository_base_commit": "8a428654588b9b537bbad99cb329f2daace58a28",
+  "deployment_archive": {
+    "file_name": "Park-Life-GitHub-Pages.zip",
+    "source_url": "https://drive.google.com/file/d/1TovlCKLijZWTPn5gfF2dtoU0xQySYcGP/view",
+    "source_workflow": ".github/workflows/pages.yml at 8a428654588b9b537bbad99cb329f2daace58a28",
+    "sha256": "855d8dcdcc03ae2684a618d52f82d166ecd7a95c9bb33d78257ede52bcccce57",
+    "bytes": 10952736
+  },
+  "development_archive": {
+    "file_name": "Park-Life-source.zip",
+    "source": "retained original development archive in this conversation workspace, not downloaded from the Pages workflow",
+    "sha256": "ec7b505f60db280d550899704359691093c85004461f7ce1e5c3f9b40c24e3bc",
+    "bytes": 20265707
+  },
+  "deployed_files": [
+    {
+      "path": "site/app.js",
+      "archive_path": "app.js",
+      "sha256": "19ee72bd96b298aa4216d474369111783b6800198b95b108049ddc64c22ec0a1",
+      "bytes": 8969,
+      "matches_development_archive": true
+    },
+    {
+      "path": "site/assets/approved.png",
+      "archive_path": "assets/approved.png",
+      "sha256": "575fdd7fbabcf5fad0736769754cae27ec628c49d620050e5cc1e82cb4259a08",
+      "bytes": 2031676,
+      "matches_development_archive": true
+    },
+    {
+      "path": "site/assets/autumn.png",
+      "archive_path": "assets/autumn.png",
+      "sha256": "44263e24b686bffbe30c675736a2853f524bbdac1ce87dc5585498543e8d67c6",
+      "bytes": 1820994,
+      "matches_development_archive": true
+    },
+    {
+      "path": "site/assets/fish.png",
+      "archive_path": "assets/fish.png",
+      "sha256": "13b7dea113072759e270dd06a840fa16c36c6e41c9f07c3f9b50333913d70723",
+      "bytes": 55441,
+      "matches_development_archive": true
+    },
+    {
+      "path": "site/assets/home-button.png",
+      "archive_path": "assets/home-button.png",
+      "sha256": "85a3300673da91d9b8a2869583e535c60fcaaf821f104d196c62c35a36c3f290",
+      "bytes": 8016,
+      "matches_development_archive": true
+    },
+    {
+      "path": "site/assets/interior.png",
+      "archive_path": "assets/interior.png",
+      "sha256": "2c9dc9927f8d1e1c12c17cc0bea9b1dfd72f844396c9eb58d93cc0b6f56fa5f8",
+      "bytes": 1626283,
+      "matches_development_archive": true
+    },
+    {
+      "path": "site/assets/leaf.png",
+      "archive_path": "assets/leaf.png",
+      "sha256": "8b2c4c81a576edee3b9ee1e247919cc3c3baa80a6c3db8ca901f1e48536d0ec4",
+      "bytes": 19088,
+      "matches_development_archive": true
+    },
+    {
+      "path": "site/assets/left-leg.png",
+      "archive_path": "assets/left-leg.png",
+      "sha256": "00e40036f4428ab4d0583741baba7169dadde5429abedf251e441729b1fba8ad",
+      "bytes": 9940,
+      "matches_development_archive": true
+    },
+    {
+      "path": "site/assets/objects.png",
+      "archive_path": "assets/objects.png",
+      "sha256": "a02e4c292c12aaab11def66461e9142d0455e48ca3bd9151999960c021215758",
+      "bytes": 1690857,
+      "matches_development_archive": true
+    },
+    {
+      "path": "site/assets/park.png",
+      "archive_path": "assets/park.png",
+      "sha256": "bc89c0ed6ef424d0af5080d81e7bd9f0db23b4a7edb7b5dace51af19c7bdb0c4",
+      "bytes": 1832309,
+      "matches_development_archive": true
+    },
+    {
+      "path": "site/assets/right-leg.png",
+      "archive_path": "assets/right-leg.png",
+      "sha256": "3adeed716c12341fc145896144faf5075bc1258e29f43680f0584a188b7c1d77",
+      "bytes": 8221,
+      "matches_development_archive": true
+    },
+    {
+      "path": "site/assets/shark-body.png",
+      "archive_path": "assets/shark-body.png",
+      "sha256": "ee3d5277af045aa13c5689adc6af37a7458961ac03f5dd5b82a0bd01b023363e",
+      "bytes": 176055,
+      "matches_development_archive": true
+    },
+    {
+      "path": "site/assets/shark.png",
+      "archive_path": "assets/shark.png",
+      "sha256": "a47ad3deaeb0e5ec89f43ddc9ef8194a31d3ddf75000d003cb43a92723a91d7a",
+      "bytes": 187120,
+      "matches_development_archive": true
+    },
+    {
+      "path": "site/assets/sprites.json",
+      "archive_path": "assets/sprites.json",
+      "sha256": "712e7852b8f486f78b8aaccacc6c2910c635c7e2a541effaac6b65c4f20ba6eb",
+      "bytes": 101,
+      "matches_development_archive": true
+    },
+    {
+      "path": "site/assets/try-button.png",
+      "archive_path": "assets/try-button.png",
+      "sha256": "da91b8fa7ccf00df99d78b36cf987ec2755afa6963804405e7710da7ae0fc433",
+      "bytes": 19326,
+      "matches_development_archive": true
+    },
+    {
+      "path": "site/assets/winter.png",
+      "archive_path": "assets/winter.png",
+      "sha256": "0f8e140e1cc13c85cfc6487cb4834faaad386467f17d1a6186743a30b8a0080f",
+      "bytes": 1911411,
+      "matches_development_archive": true
+    },
+    {
+      "path": "site/index.html",
+      "archive_path": "index.html",
+      "sha256": "08ec7493a9a0762f761a9618afeaf66232dd75e64e8b4550c68b173878ef6814",
+      "bytes": 5471,
+      "matches_development_archive": true
+    },
+    {
+      "path": "site/scene.js",
+      "archive_path": "scene.js",
+      "sha256": "0040af9e08e93257b769f792e7cb152afe181c1d65fd4993cc8848fe1c3096ab",
+      "bytes": 7117,
+      "matches_development_archive": true
+    },
+    {
+      "path": "site/style.css",
+      "archive_path": "style.css",
+      "sha256": "0b146eca8491d5a290924e25b3a1974ab9676ce9216f92501fee98e17fba5319",
+      "bytes": 7009,
+      "matches_development_archive": true
+    },
+    {
+      "path": "site/world.js",
+      "archive_path": "world.js",
+      "sha256": "215366b14b60a7955f707ba5d42556428c9f9283f6076c16c4ce229bcccac314",
+      "bytes": 5378,
+      "matches_development_archive": true
+    }
+  ],
+  "development_files": [
+    {
+      "path": "docs/recovery/development/.gitignore",
+      "archive_path": "park-life/.gitignore",
+      "sha256": "5b788054f36bdeff2b74063ccd26d97843018a139dee20f6a7f5a4e6db0ebc18",
+      "bytes": 55
+    },
+    {
+      "path": "docs/recovery/development/README.md",
+      "archive_path": "park-life/README.md",
+      "sha256": "60a1ebe3bab0ff01023f4677a8167926b41320c1440e2134a4ade86381f8e9d5",
+      "bytes": 2468
+    },
+    {
+      "path": "docs/recovery/development/build_standalone.py",
+      "archive_path": "park-life/build_standalone.py",
+      "sha256": "028f6082654e50dc1dad7145cda47843da17ef5cb67c1c1838e6d3e60460b975",
+      "bytes": 1105
+    },
+    {
+      "path": "docs/recovery/development/design-qa.md",
+      "archive_path": "park-life/design-qa.md",
+      "sha256": "e0f7158f2674194bf2524a9c9aee0b9b2e09a6540bf83ab4ded62f5b195587b5",
+      "bytes": 2892
+    },
+    {
+      "path": "docs/recovery/development/docs/superpowers/plans/2026-11-06-park-life.md",
+      "archive_path": "park-life/docs/superpowers/plans/2026-11-06-park-life.md",
+      "sha256": "8edd10b611492bbae30f7787c10c61aad5b1b8863ab3eb1ffe7afbeb6077afae",
+      "bytes": 2820
+    },
+    {
+      "path": "docs/recovery/development/docs/superpowers/specs/2026-11-06-park-life-design.md",
+      "archive_path": "park-life/docs/superpowers/specs/2026-11-06-park-life-design.md",
+      "sha256": "70b4fd109e875977dd0229e46389d381d94c3a12e49ff2a13bea8b0ce5b62733",
+      "bytes": 2085
+    },
+    {
+      "path": "docs/recovery/development/package.json",
+      "archive_path": "park-life/package.json",
+      "sha256": "cb423dbefacc7464945f3e5016645483c66a6abaab6f589a3b75843b8b8d14cf",
+      "bytes": 144
+    },
+    {
+      "path": "docs/recovery/development/prepare_assets.py",
+      "archive_path": "park-life/prepare_assets.py",
+      "sha256": "6e266fbfd9af3d83a6120eb8b5bf95ede4aebd3aaea0b67e1f6f2822c3487bf9",
+      "bytes": 2594
+    },
+    {
+      "path": "docs/recovery/development/progress.md",
+      "archive_path": "park-life/progress.md",
+      "sha256": "3ee6ce84f106057ab9423e22c311831d5543f243341cbf34fa26043686e32770",
+      "bytes": 1554
+    },
+    {
+      "path": "docs/recovery/development/serve.py",
+      "archive_path": "park-life/serve.py",
+      "sha256": "b8451ba346da289505a759bc29b688f41cd35981294779fb7017b55a9bf4f065",
+      "bytes": 619
+    },
+    {
+      "path": "docs/recovery/development/tests/world.test.js",
+      "archive_path": "park-life/tests/world.test.js",
+      "sha256": "cc920b72c2afc50cfc4e9120bb5439278789f15262451d8e17ec2e08b3937734",
+      "bytes": 4387
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+name: Validate recovered baseline
+
+on:
+  pull_request:
+  push:
+    branches: [main, 'stage-1a/**']
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Test, validate, stage, and check project-prefix HTTP routes
+        run: npm run check
+      - name: Retain verified static site for review (does not publish)
+        uses: actions/upload-artifact@v4
+        with:
+          name: park-life-pages-baseline
+          path: _site
+          include-hidden-files: true
+          if-no-files-found: error

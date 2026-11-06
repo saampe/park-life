@@ -1,0 +1,7 @@
+_site/
+_site-*/
+__pycache__/
+*.py[cod]
+node_modules/
+.recovery/
+park-life.zip

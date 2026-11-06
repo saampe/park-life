@@ -1,0 +1,30 @@
+{
+  "verified_source_commit": "15a32832903b403933d1951a9216599edc98aee6",
+  "push_ci": {
+    "run_id": 42261040610,
+    "url": "https://github.com/saampe/park-life/actions/runs/42261040610",
+    "conclusion": "success"
+  },
+  "pull_request_ci": {
+    "run_id": 42261139086,
+    "url": "https://github.com/saampe/park-life/actions/runs/42261139086",
+    "conclusion": "success"
+  },
+  "artifact": {
+    "id": 13523799490,
+    "name": "park-life-pages-baseline",
+    "sha256": "0bb389057eac7d5a456ef7a29653d6d3443eaba38d9973b8b6f5a61a19d65dd2",
+    "bytes": 10978592,
+    "original_files_byte_identical": 20,
+    "only_additional_file": ".nojekyll"
+  },
+  "graphify_post_push": {
+    "queried_file": "site/world.js",
+    "result": "no file matching: site/world.js",
+    "indexed_commit": "e1d5fe71d389c95ebce5a54f42f3630ab7c14b67",
+    "node_count": 8,
+    "meaning": "accessible old promoted snapshot; recovery branch not indexed"
+  },
+  "production_deployed": false,
+  "browser_qa_performed": false
+}
