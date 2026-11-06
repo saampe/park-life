@@ -4,8 +4,8 @@ on:
   push:
     branches: [main]
     paths:
-      - Park-Life-GitHub-Pages.zip
       - .github/workflows/pages.yml
+      - PUBLISHING.md
   workflow_dispatch:
 
 permissions:
@@ -19,18 +19,24 @@ concurrency:
 
 jobs:
   deploy:
+    runs-on: ubuntu-latest
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Verify and extract published game
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Download original approved Park Life package
         run: |
-          test -f Park-Life-GitHub-Pages.zip
-          unzip -t Park-Life-GitHub-Pages.zip
+          python -m pip install --disable-pip-version-check 'gdown==5.2.0'
+          gdown --id 1TovlCKLijZWTPn5gfF2dtoU0xQySYcGP -O park-life.zip
+          unzip -t park-life.zip
+      - name: Extract unchanged game
+        run: |
           mkdir -p _site
-          unzip -q Park-Life-GitHub-Pages.zip -d _site
+          unzip -q park-life.zip -d _site
           test -s _site/index.html
           test -s _site/assets/approved.png
           touch _site/.nojekyll
