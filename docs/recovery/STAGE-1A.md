@@ -63,7 +63,7 @@ The interior, winter scene, animation body/leg pieces, fish, object sheet, contr
 | Archive/live/source equality | **Passed: 20/20 runtime files** | Workflow archive, retained developer archive, imported files and live production |
 | Static Pages artifact | **Passed** | Exactly twenty unchanged files plus `.nojekyll` |
 | Local Pages-prefix HTTP | **Passed: 21 files plus index route** | All bodies match; JavaScript MIME types accepted under `/park-life/` |
-| GitHub Actions replacement CI | **Reported by draft PR checks** | Same `npm run check`, Node 22/Python 3.12, artifact uploaded without production publishing |
+| GitHub Actions replacement CI | **Passed: push and pull-request CI** | Runs 42261040610 and 42261139086; Node 22/Python 3.12; downloaded CI artifact matches all twenty source files exactly, adding only `.nojekyll`; see `ci-verification.json` |
 | Production source deployment | **Not run / intentionally skipped** | User requested draft PR, no main merge; fallback retained |
 | Browser/Safari/mobile/visual/E2E tests | **Unavailable in recovered suites; not run** | No such original tests recovered and no supported interactive browser tool callable in this session |
 

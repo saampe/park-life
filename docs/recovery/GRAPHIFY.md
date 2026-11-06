@@ -20,3 +20,5 @@ The current promoted graph predates this expanded source tree and cannot describ
 - Exclude generated `_site/` and `docs/recovery/development/` from primary runtime symbol results; historical copies otherwise create duplicate stale symbols.
 
 No reindex mutation tool is exposed in this session; no index update was claimed. Inspect the Git/filesystem source until a new graph reports the correct commit and expanded coverage. Repository access being ready does not mean the recovery branch is indexed.
+
+Post-push verification: querying `site/world.js` at the recovery branch source commit `15a32832903b403933d1951a9216599edc98aee6` still returned `no file matching: site/world.js`; the response explicitly identifies promoted snapshot `e1d5fe71d389c95ebce5a54f42f3630ab7c14b67`. The file is present in GitHub and both archives. This confirms the expanded repository has not been reindexed, not a missing implementation.
